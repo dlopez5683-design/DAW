@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Calculadora grupo APP_R</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>       
+        <main class="calculadora">
+            <!--titulo de la calculadora-->
+            <h1>Calculadora web </h1>
+            <!-- Pantalla donde apareceran los resultados -->
+             <div class="pantalla"> 
+                 <div id="operacion"></div>
+                 <output id="resultado" aria-live="polite">0</output>
+            </div>
+            <!-- Contenedor de todos los botones -->
+            <div class="botones">
+                <!-- Fila 1 -->
+                 <button class="limpiar" data-accion="limpiar">AC</button>
+                 <button data-accion="borrar">C</button>
+                 <button data-operador="porcentaje">%</button>
+                 <button class="operador" data-operador="dividir">÷</button>
+                <!-- Fila 2 -->
+                 <button data-numero="7">7</button>
+                 <button data-numero="8">8</button>
+                 <button data-numero="9">9</button>
+                 <button class="operador" data-operador="multiplicar">x</button>
+                <!-- Fila 3 -->
+                 <button data-numero="4">4</button>
+                 <button data-numero="5">5</button>
+                 <button data-numero="6">6</button>
+                 <button class="operador" data-operador="restar">-</button>
+                <!-- Fila 4 -->
+                 <button data-numero="1">1</button>
+                 <button data-numero="2">2</button>
+                 <button data-numero="3">3</button>
+                 <button class="operador" data-operador="sumar">+</button>
+                <!-- Fila 5 -->
+                 <button data-operador="potencia">xʸ</button>
+                 <button data-numero="0">0</button>
+                 <button data-accion="decimal">.</button>
+                 <button class="igual" data-accion="calcular">=</button>
+
+             </div>
+             <p class="pie">
+                Actividad #3 - Desarrollo de Aplicaciones Web 
+                Grupo APP_R
+            </p>
+
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
